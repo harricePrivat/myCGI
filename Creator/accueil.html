@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>CREER SITE</TITLE>
+        <meta charset="UTF-8">
+        <STYLE>
+            h1{
+                bottom: 30px;
+                color: darkblue;
+            }
+            #imgL{
+                width: 20px;
+                height: 60px;
+            }
+            #imgR{
+                width: 20px;
+                height: 60px;
+               margin-left: 80%;
+ 
+            }
+            .element{
+                margin-top: 6%;
+                margin-left: 30%;
+                width: 600px;
+                height: 400px;
+                position: fixed;
+                align-items: center;
+                background-color:deepskyblue;
+                border:dashed;
+            }
+            body{
+                text-align: center;
+                background-color:cornflowerblue;
+            }
+            .input{
+                border-radius: 15px;
+                color:brown;
+                text-align: center;
+                width: 200px;
+                background-color:lightskyblue;
+                outline: none;
+            }
+            
+            #button:hover{
+                font-size: 15px;
+                border-radius: 30px;
+                background-color: aquamarine;
+                font-weight: bold;
+            } 
+            #button{
+                margin-top: 15px;
+                cursor: pointer;
+                background-color:aqua;
+                color: blue;
+                border-radius: 20px;
+                width: 200px;
+                border: none;
+            }
+            p{
+                font-size: large;
+                color:darkblue;
+                font-weight: bold;
+            }
+
+        </STYLE>
+    </HEAD>
+    <BODY ALIGN="center">
+<FORM method="get" action="confirmation.cgi" >
+    <div class="element">
+    <h1><U>Cr&eacute;er votre site avec plaisir</U>: </h1>
+    <UL>
+       <p><U>Le nom  de votre site:</U> <INPUT class="input" TYPE="text" REQUIRED placeholder="Nom de la site" name="nom"/></p>
+       <p><U>DocumentRoot:</U>  <INPUT class="input" TYPE="text" placeholder="Chemin de la site" name="documentRoot"/></p>
+       <p><U>Le nom  du domaine:</U> <INPUT class="input" TYPE="text" REQUIRED placeholder="Nom du domaine DNS" name="dns"/></p>
+    </UL>
+      <!--  <p><U>Options</U>:</p>
+        <p><U>FollowSymLinks:</U><INPUT class="input" TYPE="checkbox" name="FollowSymLinks"/></p>
+        <p><U>ExecCGI:</U><INPUT class="input" TYPE="checkbox" name="ExecCGI"/></p>-->
+    <INPUT ID="button" TYPE="submit" VALUE="CRÉONS"/></BR>
+<!--<IMG SRC="MIT.svg" id="imgL"> 
+    <IMG SRC="MIT.svg" id="imgR">    -->
+        <p><A href="http://www.brice.mg/Creator/siteDispo.cgi\">Voici les sites déja créer</A></p>
+        <p><A href="http://www.brice.mg/Creator/siteActiver.cgi\">Voici les sites activer</A></p>
+</div>
+</FORM>
+    </BODY>
+</HTML>
